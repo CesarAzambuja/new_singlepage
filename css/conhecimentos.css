@@ -9,6 +9,9 @@
     row-gap: .5rem;
 }
 
+.conhecimento:hover{
+    transform: scale(1.1);
+}
 .conhecimento:nth-child(1){
     grid-column: 4 / 7;
     grid-row: 1 / 3;
