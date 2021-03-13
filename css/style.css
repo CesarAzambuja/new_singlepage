@@ -130,7 +130,7 @@ header{
     margin-bottom: 2rem;
 }
 
-.banner .button{
+.button{
     font-family: var(--font-action);
     color: white;
     text-transform: uppercase;
@@ -146,7 +146,7 @@ header{
     transition: .5s;
 }
 
-.banner .button:hover{
+.button:hover{
     background:#eee;
     color: #ff4081;
     font-weight: bold;
