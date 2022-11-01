@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/conhecimentos.css">
     <link rel="stylesheet" href="css/projetos.css">
     <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/responsivo.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -29,9 +30,9 @@
                 <img src="images/banner.jpg" alt="Banner">
             </div><!--img-wrapper-->
             <div class="banner">
-                <h1>Web Developer and Front End Designer</h1>
-                <p>César Azambuja</p>
-                <a class="button">Saiba Mais</a>
+                <h1 class="title">Olá, eu sou o César Azambuja</h1>
+                <p >Desenvolvedor Web</p>
+                <a class="button" href="https://wa.link/wyszu9" target="_blank">Entrar em Contato</a>
             </div><!--banner-->
         </header>
 
@@ -39,21 +40,21 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#conhecimento" class="menu-link">Conhecimentos</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
                 </ul>
             </nav>
             <div class="social-media">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/cesarazambuja_o/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/CesarAzambuja" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/eng-cesarazambuja/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                
             </div><!--social-media-->
 
         </aside><!--sidebar-->
 
-        <section class="sessao-conhecimentos">
+        <section class="sessao-conhecimentos" id="conhecimento"> 
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div><!--sessao-header-->
@@ -65,7 +66,7 @@
                         <h3>HTML</h3>
                     </div class="conhecimento-header">
                     <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum turpis in erat gravida eleifend vehicula quis nibh. Suspendisse potenti. Aenean convallis quam nec ligula faucibus, lacinia volutpat ipsum pharetra.</p>  
+                        <p> Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador que compõe a maior parte das páginas da internet e dos aplicativos online.</p>  
                     </div><!--conhecimento-text -->
                 </div><!--conhecimento-->
 
@@ -75,17 +76,17 @@
                         <h3>CSS</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum turpis in erat gravida eleifend vehicula quis nibh. Suspendisse potenti. Aenean convallis quam nec ligula faucibus, lacinia volutpat ipsum pharetra.</p>
+                        <p>O CSS é uma linguagem de folhas de estilos que é utilizada para definir como os documentos escritos na linguagem de marcação (HTML ou XML) devem ser apresentados em termos de formatação de layout.</p>
                     </div><!--conhecimento-text -->
                 </div><!--conhecimento-->
 
                 <div class="conhecimento">
                     <div class="conhecimento-header">
-                        <i class="fas fa-pencil-alt"></i>
-                        <h3>Design</h3>
+                        <img style="zoom:2 ;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAEhUlEQVRYhcWWUUhkVRjH/9+5Y1vOjnOPsy4r++AWKETJUCAzopAUGbhEEbRR4nM9RPggjPTgihQowj7uGviSL7FtbNKDoE6xbbsE2stWbrkbBZm7uq7eOzM66oz3fD2Yw525d/SOjPaHgTnf953v/jjnO+c7BI8yTfNpZm5k5iohxLJSaqa6ujrhdb5X0X5OZhaGYbxDRB8DeL7AbQG4zcxXKyoqvgoEAo+OFGh1dbVKCHEdwCse8lgAvmPm65ZlfVNTU/OgrECmaUpmjgN48VBJiX5TSt0E8LMQ4p5SalkIsSGESAQCgRQRZUoCMgxjHMAbh4HxoCyA20T0ia7r3xY6hQvMm6XCZLI7+OGn+17DKwC0MfO0YRgfHQgE4GIpMADADGxlsqVOIwCXEolEpNCY09raWgsR3ToMUCa7gxNP+EqdCgBfSynf2hvkrRARve01i5FMY+HhGjbS2yBCDmZpJYGFh2vI7lheU72+srJSWwyo3WuWzc0MjGTasVWJ9U0YyTSUYq+pfD6fL7dtuS1LJpMhy7JWcMBleUS6KKUcAGwrZFnWc/8TDIjIuWVE1FBsQjQaxZUrV/Jsg4ODkFLm/FLKvF9DQwPGxsYc9r2fXcycOw0+m/FsMaD5+XkMDAygo6MDdXV1rv5IJILm5uacze/3IxwOIxaLAQCGhobQ0tKC1tZWt09oDiAAp4oBAcDW1hZ6enpw7do1V39bWxt6e3sd9nA4nANqbW11jSGi5b3/9lMW3A+otrYW8XgcExMT+4UdSkqpBQcQEWnu4bvq7OxEY2MjYrEY0ul0WYGY+U8HENzbSE6apmF4eBiLi4sYHh52+IeGhvKKtr6+3jOPz+eb2RvYi7rok2BPkUgEnZ2duHz5Ms6fP5/nKyzYyspKr0B3g8HgmgMIgKfnaH9/PyYmJjA+Pp5nL1awbnqwbGLxkYFzZ0+hpjpww+6z11DS7picnMT09LQjWSgUQl9fH5g9t4Y8KcW4M7+AGhnAr/cWwcxXXYEA/G13xONxTE1NuSbt6upCU1MTNG33HGia5qihhgb3e1YIQtXJp/DXP49x8uSTaSll3uvCXkP37I729nYIscvb3d2NaDRqSyowOjqK2dlZAMDIyAjm5ubyPuz3+/PGsVgsV2PR8DNYT28j4D9xiYjyljrXu1KpVM3Ozs4yjq+fbWiadq6qquqx3ZjbskAgsEJEvx8TDAB8VgiTBwQAzOys4qORmc1mnZcZCoCUUl8cBw0R9Z4+fXrJ1WcfMDOZpnkHQOMR8tzSdf0lIlJuzsInLBPRp0dFQkRLSqn3isEALifqv1WKA3i5zDwZAK9KKW/uF+RoqETEQoj3ARhlhNkG8O5BMK5AABAMBv8gogsANssAYwJ4TUp53Utw0SeHrutxAB0AHHdFCZpRSrVIKb/3OmHfN5CU8oZS6gUA4/vFuchk5g91XW8OhUJ3S5nouU0YhhEmog+Y+QKAapcQC8CPAL5USn0eCoWSLjHlA9oTM1Mqlaq3LOtZADoRrVuWtZjNZn85c+bMxmEg7PoX4qepA1CBqTsAAAAASUVORK5CYII=">
+                        <h3>Dotnet</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum turpis in erat gravida eleifend vehicula quis nibh. Suspendisse potenti. Aenean convallis quam nec ligula faucibus, lacinia volutpat ipsum pharetra.</p>
+                        <p>.NET é um framework da Microsoft para desenvolvimento Web, e assim como qualquer framework de desenvolvimento, fornece facilidades de reutilização e reaproveitamento de código, dentre outras facilidades de uso.</p>
                     </div><!--conhecimento-text -->
                 </div><!--conhecimento-->
 
@@ -95,7 +96,7 @@
                         <h3>JavaScript</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum turpis in erat gravida eleifend vehicula quis nibh. Suspendisse potenti. Aenean convallis quam nec ligula faucibus, lacinia volutpat ipsum pharetra.</p>
+                        <p>JavaScript é uma linguagem de programação de alto nível criada, a princípio, para ser executada em navegadores e manipular comportamentos de páginas web.</p>
                     </div><!--conhecimento-text -->
                 </div><!--conhecimento-->
 
@@ -105,7 +106,7 @@
                         <h3>Bootstrap</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum turpis in erat gravida eleifend vehicula quis nibh. Suspendisse potenti. Aenean convallis quam nec ligula faucibus, lacinia volutpat ipsum pharetra.</p>
+                        <p>O bootstrap é uma estrutura de desenvolvimento web de código aberto e gratuita. Foi projetada para facilitar o processo de criação de sites responsivos para dispositivos móveis, fornecendo uma coleção de sintaxe para designs de modelo.</p>
                     </div><!--conhecimento-text -->
                 </div><!--conhecimento-->
 
@@ -116,7 +117,7 @@
                         <h3>Git e GitHub</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum turpis in erat gravida eleifend vehicula quis nibh. Suspendisse potenti. Aenean convallis quam nec ligula faucibus, lacinia volutpat ipsum pharetra.</p>
+                        <p>O Git é um sistema de controle de versão de arquivos. É um software livre e muito utilizado no desenvolvimento de software.</p>
                     </div><!--conhecimento-text -->
                 </div><!--conhecimento-->
                 <div class="conhecimentos-img-wrapper">
@@ -125,7 +126,7 @@
             </div><!--Conhecimentos-->
         </section><!--sessao-conhecimento-->
 
-        <section class="sessao-projetos">
+        <section class="sessao-projetos" id="projetos">
         <div class="sessao-header">
             <h1>Projetos</h1>
         </div>
@@ -166,29 +167,23 @@
         </div>
         </section><!--sessao-projetos-->
 
-        <section class="sessao-contato">
+        <section class="sessao-contato" id="contato">
             <div class="contato-wrapper">
-                <div class="contato-left"></div><!--contato-left-->
+                <div class="contato-left"></div>
                 <div class="contato-right">
-                    <h1>Contato</h1>
-                    <form>
-                        <div class="input-group">
-                            <input type="text" class="field" id="nome" >
-                            <label for="nome" class="field-label">Nome</label>
-                        </div>
-                        <div class="input-group">
-                            <input type="mail" class="field" id="email" >
-                            <label for="email" class="field-label">Seu E-mail</label>
-                        </div>
-                        <div class="input-group">
-                            <textarea class="field" id="mensagem"></textarea>
-                            <label for="mensagem" class="field-label">Mensagem</label>
-                        </div>
-                        <button type="submit" class="button">Enviar</button>
-                    </form>
-                </div><!--contato-right-->
-            </div><!--contato-wrapper-->
-        </section><!--sessao-contato-->
+                    <h1>Contatos</h1>
+                    <div class="contato-redes">
+                        <a href="mailto: caaso.eng@gmail.com" target="_blank"><i class="fas fa-envelope"></i>caaso.eng@gmail.com</a>
+                        <a href="https://wa.link/wyszu9" target="_blank"><i class="fab fa-whatsapp"></i>(13) 98176-8332</a>
+                        <a href="https://www.instagram.com/cesarazambuja_o/" target="_blank"><i class="fab fa-instagram"></i>@cesarazambuja_o</a>
+                        <a href="https://github.com/CesarAzambuja" target="_blank"><i class="fab fa-github"></i>CesarAzambuja</a>
+                        <a href="https://www.linkedin.com/in/eng-cesarazambuja/" target="_blank"><i class="fab fa-linkedin"></i>eng-cesarazambuja</a>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
 
     </div> <!--container-->
 
