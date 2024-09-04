@@ -1,4 +1,5 @@
 .sessao-projetos {
+  background-color: var(--gray-100);
   padding-bottom: 3rem;
 }
 
@@ -9,20 +10,20 @@
 }
 
 .card {
-  width: 18rem;
-  height: 25rem;
+  width: 28rem;
+  height: 19rem;
   position: relative;
 }
 
 .card-img-wrapper {
   width: 100%;
   height: 100%;
-  background-color: #580a52;
+  background-color: var(--gray-400);
   border-radius: 0.5rem;
 }
 
 .card-img-wrapper img {
-  object-fit: cover;
+  object-fit:cover;
   width: 100%;
   height: 100%;
   border-radius: 0.5rem;
@@ -30,7 +31,7 @@
 }
 
 .card:hover .card-img-wrapper img {
-  opacity: 0.6;
+  opacity: 0.3;
   transition: opacity 0.3s;
 }
 
@@ -46,7 +47,7 @@
 
 .card-inf h2 {
   font-family: var(--font-primary);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #eee;
   margin-bottom: 0.5rem;
@@ -54,35 +55,27 @@
 
 .card-inf h3 {
   font-family: var(--font-action);
+  font-size: .8rem;
   font-weight: bold;
   color: #ff4081;
   margin-bottom: 1rem;
 }
 
 .card-inf p {
-  font-family: var(--font-segundary);
+  font-family: var(--font-secondary);
   color: #eee;
-  weight: 80%;
+  height: 80%;
   margin-bottom: 1rem;
 }
 
-.card-inf button {
+.card-inf a {
   width: 8rem;
+  padding: 0.4rem .8rem;
   height: 2.5rem;
-  background: #ad5389; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #3c1053,
-    #ad5389
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #3c1053,
-    #ad5389
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #eee;
+  background-color: var(--blue);
   font-family: var(--font-action);
   border: none;
+  color: white;
   margin-top: 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -91,12 +84,19 @@
   transition: 0.7s;
 }
 
-.card-inf button:hover {
-  background: #eee;
-  color: #ff4081;
+.card-inf a:hover {
+  opacity: .8;
 }
 
 .card:hover .card-inf {
   opacity: 1;
   visibility: visible;
+}
+
+.card-inf a.github {
+  background-color: var(--gray-400);
+}
+
+.card-inf a i {
+  margin-right: 4px;
 }

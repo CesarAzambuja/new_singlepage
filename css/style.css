@@ -1,102 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
 
-:root{
+:root {
     --font-primary: "Baloo Da 2", sans-serif;
-    --font-segundary: "Josefin Slab", sans-serif;
+    --font-secondary: "Inter", sans-serif;
     --font-action: "Mulish", sans-serif;
+    --blue-dark: #1E6F9F;
+        --blue: #4EA8DE;
+        --purple-dark: #5E60CE;
+        --purple: #8284FA;
+        --gray-700: #0D0D0D;
+        --gray-600: #1A1A1A;
+        --gray-500: #262626;
+        --gray-400: #333333;
+        --gray-300: #808080;
+        --gray-200: #D9D9D9;
+        --gray-100: #F2F2F2;
+        --Feedback: #E25858;
 }
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    -webkit-font-smoothing: antialiased;
 }
 
-.hamburguer{
-    width:2rem;
-    height:2rem;
-    position:fixed;
+.hamburguer {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
     z-index: 100;
     top: 2rem;
     right: 2rem;
     display: flex;
-    flex-direction:column;
-    justify-content:space-evenly;
+    flex-direction: column;
+        justify-content: space-evenly;
     cursor: pointer;
 }
 
 .hamburguer span {
     position: absolute;
-    left:3rem;
-    background: #ad5389;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    left: 3rem;
+        background: var(--purple-dark);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     font-family: var(--font-action);
-    width:6rem;
-    height:2rem;
+    width: 6rem;
+        height: 2rem;
     display: flex;
     align-items: center;
-    justify-content:center;
-    padding:5px;
+    justify-content: center;
+        padding: 5px;
     opacity: 0;
 }
 
-.hamburguer span::before{
-    content:"";
+.hamburguer span::before {
+    content: "";
     position: absolute;
-    border-right: .5rem solid #ad5389;
+    border-right: .5rem solid var(--purple-dark);
     border-top: .5rem solid transparent;
     border-left: .5rem solid transparent;
     border-bottom: .5rem solid transparent;
     left: -1rem;
 }
 
-.show-menu .hamburguer{
-    right:17rem;
+.show-menu .hamburguer {
+    right: 17rem;
     transition: all 1.5s;
 }
 
-.show-menu .hamburguer:hover span{
+.show-menu .hamburguer:hover span {
     opacity: 1;
 }
 
-.hamburguer .line{
-    width:100%;
+.hamburguer .line {
+    width: 100%;
     height: .1rem;
-    background-color:white;
+    background-color: white;
     box-shadow: 0.1rem 0.1rem 1px #000;
     transition: .8s;
 }
-.show-menu #line1{
+.show-menu #line1 {
     transform: rotate(47deg) translate(.3rem, 0.50rem);
 }
 
-.show-menu #line2{
+.show-menu #line2 {
     opacity: 0;
     visibility: hidden;
 }
-
-.show-menu #line3{
-    transform: rotate(-47deg)  translate(.3rem, -0.50rem);
+.show-menu #line3 {
+    transform: rotate(-47deg) translate(.3rem, -0.50rem);
 }
-header{
+header {
     width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
 }
-
-.img-wrapper{
-    background-color: rgba(0,0,0,0.8);
+.img-wrapper {
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.img-wrapper img{
+.img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -104,147 +114,96 @@ header{
     animation: zoom 20s;
 }
 
-.banner{
+.banner {
     width: 60%;
     position: absolute;
     top: 30%;
     left: 15%;
-    animation: moveBanner 1.2s;
+        animation: moveBanner 1.2s;
+    }
+.profile {
+    height: 80px;
+    display: flex;
+    gap: 1rem;
 }
 
-.banner h1{
+.banner img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact a {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 230px;
+}
+
+a.linkedin {
+    background-color: var(--blue-dark);
+}
+
+a.linkedin:hover {
+    background-color: var(--blue);
+}
+
+a.github {
+    background-color: var(--gray-400);
+}
+
+a.github:hover {
+    background-color: var(--gray-500);
+}
+
+.banner h1 {
     color: white;
-    font-size:3.5rem;
-    font-family: var(--font-primary);
-    font-weight:200;
-    text-shadow: .2rem .3rem 2px rgba(0,0,0.4);
-    line-height: 4rem;
-    margin-bottom: 2rem;
+    font-size: 3.5rem;
+        font-family: var(--font-primary);
+        font-weight: 200;
+    text-shadow: .2rem .3rem 2px rgba(0, 0, 0.4);
+
 }
 
-.banner h1::after{
+.banner h1::after {
     content: '|';
     margin-left: 5px;
     opacity: 1;
     animation: cursor .7s infinite;
 }
 
-@keyframes cursor {
-    0%, 100%{
-        opacity: 1;
-    }
-    50%{
-    opacity: 0;
-    }
-}
-
-.banner p{
-    font-family: var(--font-segundary);
-    color:white;
+.banner p {
+    font-family: var(--font-secondary);
+    color: white;
     font-size: 2rem;
-    text-shadow: .2rem .2rem rgba(0,0,0.4);
+    text-shadow: .2rem .2rem rgba(0, 0, 0.4);
     margin-bottom: 2rem;
 }
 
-.button{
+.button {
     font-family: var(--font-action);
     color: white;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    background: #ad5389;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border: none;
-    padding: 1rem 3rem ;
-    box-shadow: .2rem .2rem 3px rgb(0,0,0);
-    border-radius:5px;
+    background: var(--purple-dark);
+        border: none;
+        padding: 1rem 3rem;
+    box-shadow: .2rem .2rem 3px rgb(0, 0, 0);
+    border-radius: 8px;
     cursor: pointer;
     transition: .5s;
 }
-
-.button:hover{
-    background:#eee;
-    color: #ff4081;
+.button:hover {
+    background: var(--purple);
     font-weight: bold;
 }
 
-.banner .button:active{
+.banner .button:active {
     box-shadow: none;
-}
-
-.sidebar{
-    width:20rem;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.6);
-    position: fixed;
-    top: 0;
-    right: -20rem;
-    transition: all 1s;
-}
-
-.show-menu .sidebar{
-    right: 0
-}
-
-.menu{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
-.menu-item{
-    text-align: center;
-    margin-bottom: .5rem;
-}
-
-.menu-link{
-    font-family: var(--font-action);
-    font-size: 2rem;
-    color: #555;
-    transition:color 1s;
-}
-
-.menu-link:hover{
-    color:#3c1053;
-}
-
-.social-media{
-    position: absolute;
-    bottom:5rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly
-}
-
-.social-media i{
-    zoom: 1.8;
-    color: #555;
-    transition:color .5s;
-}
-.social-media i:hover{
-    color:#3c1053;
-}
-
-
-@keyframes zoom {
-    0%{
-        transform: scale(1.3)
-    }
-    100%{
-        transform: scale(1)
-    }
-
-
-}
-
-@keyframes moveBanner {
-    0%{
-        transform: translateY(20rem) rotateY(-30deg);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0) rotateY(0);
-        opacity: 1;
-    }
 }

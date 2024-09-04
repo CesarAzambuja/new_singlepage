@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,16 @@
     <link rel="stylesheet" href="css/conhecimentos.css">
     <link rel="stylesheet" href="css/projetos.css">
     <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>Sigle Page</title>
-    
+    <title>Portfolio | César Azambuja </title>
+
 <body>
     <div class="container">
 
@@ -30,9 +34,19 @@
                 <img src="images/banner.jpg" alt="Banner">
             </div><!--img-wrapper-->
             <div class="banner">
-                <h1 class="title">Olá, eu sou o César Azambuja.</h1>
-                <p >Desenvolvedor Web</p>
-                <a class="button" href="https://wa.link/wyszu9" target="_blank">Entrar em Contato</a>
+                <div class="profile">
+                    <img src="/images/profile.jpeg" alt="">
+                    <h1 class="title">Olá, eu sou o César Azambuja.</h1>
+                </div>
+                <p>Desenvolvedor FullStack</p>
+                <div class="contact">
+                    <a class="button contactbt" href="https://wa.link/wyszu9" target="_blank"><i
+                            class="fab fa-whatsapp"></i>Contato</a>
+                    <a class="button github" href="https://github.com/CesarAzambuja" target="_blank"><i
+                            class="fab fa-github"></i>GitHub</a>
+                    <a class="button linkedin" href="https://www.linkedin.com/in/eng-cesarazambuja/9" target="_blank"><i
+                            class="fab fa-linkedin"></i>linkedin</a>
+                </div>
             </div><!--banner-->
         </header>
 
@@ -42,19 +56,20 @@
                     <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
                     <li class="menu-item"><a href="#conhecimento" class="menu-link">Conhecimentos</a></li>
                     <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
                 </ul>
             </nav>
             <div class="social-media">
-                <a href="https://www.instagram.com/cesarazambuja_o/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/cesarazambuja_o/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
                 <a href="https://github.com/CesarAzambuja" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/eng-cesarazambuja/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                
+                <a href="https://www.linkedin.com/in/eng-cesarazambuja/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+
             </div><!--social-media-->
 
         </aside><!--sidebar-->
 
-        <section class="sessao-conhecimentos" id="conhecimento"> 
+        <section class="sessao-conhecimentos" id="conhecimento">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div><!--sessao-header-->
@@ -66,7 +81,9 @@
                         <h3>HTML</h3>
                     </div class="conhecimento-header">
                     <div class="conhecimento-text">
-                        <p> Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador que compõe a maior parte das páginas da internet e dos aplicativos online.</p>  
+                        <p> HTML (HyperText Markup Language) é a linguagem padrão usada para criar e estruturar páginas
+                            web. Ele define a estrutura do conteúdo por meio de tags, como títulos, parágrafos, links,
+                            imagens e formulários.</p>
                     </div><!--conhecimento-text -->
                 </div><!--conhecimento-->
 
@@ -76,117 +93,122 @@
                         <h3>CSS</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p>O CSS é uma linguagem de folhas de estilos que é utilizada para definir como os documentos escritos na linguagem de marcação (HTML ou XML) devem ser apresentados em termos de formatação de layout.</p>
+                        <p>CSS é uma linguagem usada para estilizar páginas web. Ela define a
+                            aparência visual dos elementos HTML, como cores, layouts, fontes e espaçamentos, tornando o
+                            design flexível e personalizado.</p>
                     </div><!--conhecimento-text -->
                 </div><!--conhecimento-->
-
                 <div class="conhecimento">
                     <div class="conhecimento-header">
-                        <img style="zoom:2 ;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAEhUlEQVRYhcWWUUhkVRjH/9+5Y1vOjnOPsy4r++AWKETJUCAzopAUGbhEEbRR4nM9RPggjPTgihQowj7uGviSL7FtbNKDoE6xbbsE2stWbrkbBZm7uq7eOzM66oz3fD2Yw525d/SOjPaHgTnf953v/jjnO+c7BI8yTfNpZm5k5iohxLJSaqa6ujrhdb5X0X5OZhaGYbxDRB8DeL7AbQG4zcxXKyoqvgoEAo+OFGh1dbVKCHEdwCse8lgAvmPm65ZlfVNTU/OgrECmaUpmjgN48VBJiX5TSt0E8LMQ4p5SalkIsSGESAQCgRQRZUoCMgxjHMAbh4HxoCyA20T0ia7r3xY6hQvMm6XCZLI7+OGn+17DKwC0MfO0YRgfHQgE4GIpMADADGxlsqVOIwCXEolEpNCY09raWgsR3ToMUCa7gxNP+EqdCgBfSynf2hvkrRARve01i5FMY+HhGjbS2yBCDmZpJYGFh2vI7lheU72+srJSWwyo3WuWzc0MjGTasVWJ9U0YyTSUYq+pfD6fL7dtuS1LJpMhy7JWcMBleUS6KKUcAGwrZFnWc/8TDIjIuWVE1FBsQjQaxZUrV/Jsg4ODkFLm/FLKvF9DQwPGxsYc9r2fXcycOw0+m/FsMaD5+XkMDAygo6MDdXV1rv5IJILm5uacze/3IxwOIxaLAQCGhobQ0tKC1tZWt09oDiAAp4oBAcDW1hZ6enpw7do1V39bWxt6e3sd9nA4nANqbW11jSGi5b3/9lMW3A+otrYW8XgcExMT+4UdSkqpBQcQEWnu4bvq7OxEY2MjYrEY0ul0WYGY+U8HENzbSE6apmF4eBiLi4sYHh52+IeGhvKKtr6+3jOPz+eb2RvYi7rok2BPkUgEnZ2duHz5Ms6fP5/nKyzYyspKr0B3g8HgmgMIgKfnaH9/PyYmJjA+Pp5nL1awbnqwbGLxkYFzZ0+hpjpww+6z11DS7picnMT09LQjWSgUQl9fH5g9t4Y8KcW4M7+AGhnAr/cWwcxXXYEA/G13xONxTE1NuSbt6upCU1MTNG33HGia5qihhgb3e1YIQtXJp/DXP49x8uSTaSll3uvCXkP37I729nYIscvb3d2NaDRqSyowOjqK2dlZAMDIyAjm5ubyPuz3+/PGsVgsV2PR8DNYT28j4D9xiYjyljrXu1KpVM3Ozs4yjq+fbWiadq6qquqx3ZjbskAgsEJEvx8TDAB8VgiTBwQAzOys4qORmc1mnZcZCoCUUl8cBw0R9Z4+fXrJ1WcfMDOZpnkHQOMR8tzSdf0lIlJuzsInLBPRp0dFQkRLSqn3isEALifqv1WKA3i5zDwZAK9KKW/uF+RoqETEQoj3ARhlhNkG8O5BMK5AABAMBv8gogsANssAYwJ4TUp53Utw0SeHrutxAB0AHHdFCZpRSrVIKb/3OmHfN5CU8oZS6gUA4/vFuchk5g91XW8OhUJ3S5nouU0YhhEmog+Y+QKAapcQC8CPAL5USn0eCoWSLjHlA9oTM1Mqlaq3LOtZADoRrVuWtZjNZn85c+bMxmEg7PoX4qepA1CBqTsAAAAASUVORK5CYII=">
-                        <h3>Dotnet</h3>
+                        <i class="fab fa-node-js"></i>
+                        <h3>NodeJs</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p>.NET é um framework da Microsoft para desenvolvimento Web, e assim como qualquer framework de desenvolvimento, fornece facilidades de reutilização e reaproveitamento de código, dentre outras facilidades de uso.</p>
+                        <p>Node.js é um ambiente de execução JavaScript do lado do servidor, baseado no motor V8 do
+                            Chrome. Ele permite criar aplicações escaláveis e de alto desempenho, utilizando programação
+                            assíncrona e eventos.</p>
                     </div><!--conhecimento-text -->
                 </div><!--conhecimento-->
-
                 <div class="conhecimento">
                     <div class="conhecimento-header">
                         <i class="fab fa-js"></i>
                         <h3>JavaScript</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p>JavaScript é uma linguagem de programação de alto nível criada, a princípio, para ser executada em navegadores e manipular comportamentos de páginas web.</p>
+                        <p>JavaScript é uma linguagem de programação de alto nível criada, a princípio, para ser
+                            executada em navegadores e manipular comportamentos de páginas web.</p>
                     </div><!--conhecimento-text -->
                 </div><!--conhecimento-->
-
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fab fa-bootstrap"></i>
-                        <h3>Bootstrap</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>O bootstrap é uma estrutura de desenvolvimento web de código aberto e gratuita. Foi projetada para facilitar o processo de criação de sites responsivos para dispositivos móveis, fornecendo uma coleção de sintaxe para designs de modelo.</p>
-                    </div><!--conhecimento-text -->
-                </div><!--conhecimento-->
-
-
                 <div class="conhecimento">
                     <div class="conhecimento-header">
                         <i class="fab fa-github"></i>
                         <h3>Git e GitHub</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p>O Git é um sistema de controle de versão de arquivos. É um software livre e muito utilizado no desenvolvimento de software.</p>
+                        <p>Git é um sistema de controle de versão, usado para rastrear mudanças no código. GitHub é uma
+                            plataforma de hospedagem para projetos Git, facilitando colaboração e gerenciamento de
+                            repositórios online.</p>
                     </div><!--conhecimento-text -->
                 </div><!--conhecimento-->
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-react"></i>
+                        <h3>React / React Native</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>O React é uma biblioteca JavaScript usada para construir interfaces de usuário dinâmicas e
+                            componentes
+                            reutilizáveis. já o React Native é um framework que permite criar aplicativos móveis nativos
+                            para iOS e Android usando JavaScript e React.</p>
+                    </div><!--conhecimento-text -->
+                </div><!--conhecimento-->
+
+
                 <div class="conhecimentos-img-wrapper">
                     <img src="images/conhecimento.svg" alt="">
                 </div>
             </div><!--Conhecimentos-->
         </section><!--sessao-conhecimento-->
-
         <section class="sessao-projetos" id="projetos">
-        <div class="sessao-header">
-            <h1>Projetos</h1>
-        </div>
-        <div class="projetos">
-            <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="images/project1.jpg" alt="">
-                </div>
-                <div class="card-inf">
-                    <h2>Projeto 01</h2>
-                    <h3>JavaScript</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quod quia asperiores dolorum fugiat similique?</p>
-                    <button>Saiba Mais</button>
-                </div><!--card-inf -->
-                </div><!--card-->
-                <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="images/project2.jpg" alt="">
-                </div>
-                <div class="card-inf">
-                    <h2>Projeto 02</h2>
-                    <h3>HTML / CSS / JS</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A mollitia similique quaerat veritatis aspernatur accusamus?</p>
-                    <button>Saiba Mais</button>
-                </div><!--card-inf -->
-                </div><!--card-->
-                <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="images/project3.jpg" alt="">
-                </div>
-                <div class="card-inf">
-                    <h2>Projeto 03</h2>
-                    <h3>NodeJs</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum porro culpa autem, dolorum nihil pariatur.</p>
-                    <button>Saiba Mais</button>
-                </div><!--card-inf -->
-            </div><!--card-->
-        </div>
-        </section><!--sessao-projetos-->
-
-        <section class="sessao-contato" id="contato">
-            <div class="contato-wrapper">
-                <div class="contato-left"></div>
-                <div class="contato-right">
-                    <h1>Contatos</h1>
-                    <div class="contato-redes">
-                        <a href="mailto: caaso.eng@gmail.com" target="_blank"><i class="fas fa-envelope"></i>caaso.eng@gmail.com</a>
-                        <a href="https://wa.link/wyszu9" target="_blank"><i class="fab fa-whatsapp"></i>(13) 98176-8332</a>
-                        <a href="https://www.instagram.com/cesarazambuja_o/" target="_blank"><i class="fab fa-instagram"></i>@cesarazambuja_o</a>
-                        <a href="https://github.com/CesarAzambuja" target="_blank"><i class="fab fa-github"></i>CesarAzambuja</a>
-                        <a href="https://www.linkedin.com/in/eng-cesarazambuja/" target="_blank"><i class="fab fa-linkedin"></i>eng-cesarazambuja</a>
-                        
-                    </div>
-                   
-                </div>
+            <div class="sessao-header">
+                <h1>Projetos</h1>
             </div>
-        </section>
+            <div class="projetos">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/Menu.png" alt="">
+                    </div>
+                    <div class="card-inf">
+                        <h2>Menu On-Line</h2>
+                        <h3>HTML | CSS | JavaScript</h3>
+                        <p>O projeto Menu on-line é um cardápio digital onde o cliente pode fazer seu pedido de forma rápida com e envio do resumo do pedido diretamente para o Whatsapp do vendedor, um projeto ideal para pequenos comércios locais. </p>
+                        <a href="https://pedidowhats.netlify.app/" target="_blank"><i class="fab fa-chrome"></i>Acessar</a>
+                        <a href="https://github.com/CesarAzambuja/PedidoWhats" target="_blank" class="github"><i class="fab fa-github"></i>Código</a>
+                    </div><!--card-inf -->
+                </div><!--card-->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/Feed.png" alt="">
+                    </div>
+                    <div class="card-inf">
+                        <h2>Feed</h2>
+                        <h3>React | Typescript | vite</h3>
+                        <p>O feed é um projeto baseado em uma rede social, ontem é possível o usuário fazer posts criar e receber cometários em posts existentes.
+                            </p>
+                        <a href="https://feedcesarazambuja.netlify.app/" target="_blank"><i class="fab fa-chrome"></i>Acessar</a>
+                        <a href="https://github.com/CesarAzambuja/feed_ts" target="_blank" class="github"><i class="fab fa-github"></i>Código</a>
+                    </div><!--card-inf -->
+                </div><!--card-->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/CartaoLink.png" alt="">
+                    </div>
+                    <div class="card-inf">
+                        <h2>Cartão Digital</h2>
+                        <h3>HTML | CSS | JavaScript</h3>
+                        <p>Uma aplicação simples porem muito funcional o cartão digital, pode ser usado como link da BIO de redes sociais ou com o uso da tecnologia NFC para criar cartão de visita digitais.</p>
+                        <a href="https://upsidercard.vercel.app/" target="_blank"><i class="fab fa-chrome"></i>Acessar</a>
+                        <a href="https://github.com/UpsiderDeveloper/CardProfile01" target="_blank" class="github"><i class="fab fa-github"></i>Código</a>
+                    </div><!--card-inf -->
+                </div><!--card-->
+            </div>
+        </section><!--sessao-projetos-->
+        <footer>
+            <div class="text">2024 | Desenvolvido por: César Azambuja 🚀</div>
+            <div class="socialmedia">
+                <a href="https://www.instagram.com/cesarazambuja_o/" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://github.com/CesarAzambuja" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/eng-cesarazambuja/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+
+
 
     </div> <!--container-->
-
 </body>
 <script src="script.js"></script>
+<script src="https://kit.fontawesome.com/f4dd9ff78b.js" crossorigin="anonymous"></script>
+
 </html>
